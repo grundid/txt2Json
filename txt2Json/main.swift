@@ -9,8 +9,6 @@
 import Foundation
 
 if (Process.arguments.count != 3) {
-    println("Parameters: ")
-    println(Process.arguments.count)
     println("Usage: txt2Json <inputFile> <columnMappings>")
 } else {
     let inputFileName = Process.arguments[1];

@@ -1,7 +1,4 @@
-== txt2Json ==
-
 Einfaches Tool zum konvertieren von Text-Dateien nach JSON.
-
 
 Aus einer Text-Datei, die pro Zeile einen Wert enthält wird die folgende JSON Datei erzeugt:
 
