@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3A498C721A2B1F96003C0A87 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C711A2B1F96003C0A87 /* main.swift */; };
+		3A498C811A2B205F003C0A87 /* txt2JsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C801A2B205F003C0A87 /* txt2JsonTests.swift */; };
+		3A498C861A2B20A8003C0A87 /* LineProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C851A2B20A8003C0A87 /* LineProcessor.swift */; };
+		3A498C871A2B20A8003C0A87 /* LineProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C851A2B20A8003C0A87 /* LineProcessor.swift */; };
+		3A498C891A2B283B003C0A87 /* testData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A498C881A2B283B003C0A87 /* testData.txt */; };
+		3A498C8B1A2B2DDD003C0A87 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C8A1A2B2DDD003C0A87 /* FileLineReader.swift */; };
+		3A498C8C1A2B2DDD003C0A87 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A498C8A1A2B2DDD003C0A87 /* FileLineReader.swift */; };
+		3AD503581A2B3EB300B61E49 /* JsonWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD503571A2B3EB300B61E49 /* JsonWriter.swift */; };
+		3AD503591A2B3EB300B61E49 /* JsonWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD503571A2B3EB300B61E49 /* JsonWriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +33,24 @@
 /* Begin PBXFileReference section */
 		3A498C6E1A2B1F96003C0A87 /* txt2Json */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = txt2Json; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A498C711A2B1F96003C0A87 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3A498C7C1A2B205F003C0A87 /* txt2JsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = txt2JsonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A498C7F1A2B205F003C0A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A498C801A2B205F003C0A87 /* txt2JsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = txt2JsonTests.swift; sourceTree = "<group>"; };
+		3A498C851A2B20A8003C0A87 /* LineProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineProcessor.swift; sourceTree = "<group>"; };
+		3A498C881A2B283B003C0A87 /* testData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testData.txt; path = txt2JsonTests/testData.txt; sourceTree = SOURCE_ROOT; };
+		3A498C8A1A2B2DDD003C0A87 /* FileLineReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLineReader.swift; sourceTree = "<group>"; };
+		3AD503571A2B3EB300B61E49 /* JsonWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonWriter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A498C6B1A2B1F96003C0A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A498C791A2B205F003C0A87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3A498C701A2B1F96003C0A87 /* txt2Json */,
+				3A498C7D1A2B205F003C0A87 /* txt2JsonTests */,
 				3A498C6F1A2B1F96003C0A87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3A498C6E1A2B1F96003C0A87 /* txt2Json */,
+				3A498C7C1A2B205F003C0A87 /* txt2JsonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +82,29 @@
 			isa = PBXGroup;
 			children = (
 				3A498C711A2B1F96003C0A87 /* main.swift */,
+				3A498C851A2B20A8003C0A87 /* LineProcessor.swift */,
+				3A498C8A1A2B2DDD003C0A87 /* FileLineReader.swift */,
+				3AD503571A2B3EB300B61E49 /* JsonWriter.swift */,
 			);
 			path = txt2Json;
+			sourceTree = "<group>";
+		};
+		3A498C7D1A2B205F003C0A87 /* txt2JsonTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A498C801A2B205F003C0A87 /* txt2JsonTests.swift */,
+				3A498C881A2B283B003C0A87 /* testData.txt */,
+				3A498C7E1A2B205F003C0A87 /* Supporting Files */,
+			);
+			path = txt2JsonTests;
+			sourceTree = "<group>";
+		};
+		3A498C7E1A2B205F003C0A87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A498C7F1A2B205F003C0A87 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +127,23 @@
 			productReference = 3A498C6E1A2B1F96003C0A87 /* txt2Json */;
 			productType = "com.apple.product-type.tool";
 		};
+		3A498C7B1A2B205F003C0A87 /* txt2JsonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A498C821A2B205F003C0A87 /* Build configuration list for PBXNativeTarget "txt2JsonTests" */;
+			buildPhases = (
+				3A498C781A2B205F003C0A87 /* Sources */,
+				3A498C791A2B205F003C0A87 /* Frameworks */,
+				3A498C7A1A2B205F003C0A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = txt2JsonTests;
+			productName = txt2JsonTests;
+			productReference = 3A498C7C1A2B205F003C0A87 /* txt2JsonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +154,9 @@
 				ORGANIZATIONNAME = "GrundID GmbH";
 				TargetAttributes = {
 					3A498C6D1A2B1F96003C0A87 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					3A498C7B1A2B205F003C0A87 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -109,16 +174,42 @@
 			projectRoot = "";
 			targets = (
 				3A498C6D1A2B1F96003C0A87 /* txt2Json */,
+				3A498C7B1A2B205F003C0A87 /* txt2JsonTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A498C7A1A2B205F003C0A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A498C891A2B283B003C0A87 /* testData.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A498C6A1A2B1F96003C0A87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A498C861A2B20A8003C0A87 /* LineProcessor.swift in Sources */,
 				3A498C721A2B1F96003C0A87 /* main.swift in Sources */,
+				3AD503581A2B3EB300B61E49 /* JsonWriter.swift in Sources */,
+				3A498C8B1A2B2DDD003C0A87 /* FileLineReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A498C781A2B205F003C0A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A498C871A2B20A8003C0A87 /* LineProcessor.swift in Sources */,
+				3A498C811A2B205F003C0A87 /* txt2JsonTests.swift in Sources */,
+				3AD503591A2B3EB300B61E49 /* JsonWriter.swift in Sources */,
+				3A498C8C1A2B2DDD003C0A87 /* FileLineReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +305,38 @@
 			};
 			name = Release;
 		};
+		3A498C831A2B205F003C0A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = txt2JsonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A498C841A2B205F003C0A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = txt2JsonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +356,16 @@
 				3A498C771A2B1F96003C0A87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A498C821A2B205F003C0A87 /* Build configuration list for PBXNativeTarget "txt2JsonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A498C831A2B205F003C0A87 /* Debug */,
+				3A498C841A2B205F003C0A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
